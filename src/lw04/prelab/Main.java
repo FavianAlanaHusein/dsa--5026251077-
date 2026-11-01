@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(Main.class.getResourceAsStream("branches.txt"));
 
-        int banyakEx = 0;
+        int banyakExample = 0;
 
         while (sc.hasNextInt()) {
-            if (banyakEx > 0) {
+            if (banyakExample > 0) {
                 System.out.println();
             }
-            banyakEx++;
+            banyakExample++;
 
             int totalBranch = sc.nextInt();
             int[] branches = new int[totalBranch];
@@ -64,4 +64,4 @@ public class Main {
 
         sc.close();
     }
-}
+} 
